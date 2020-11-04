@@ -69,12 +69,11 @@
 }
 
 .page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-}
-
+   min-height: 100%;
+   display: grid;
+   grid-template-rows: min-content 1fr min-content;
+   align-content: start;
+ }
 
   /* Main header */
 
@@ -99,7 +98,6 @@
     top: 0;
   }
 
-  
   .site-navigation {
     display: flex;
     justify-content: space-around;
@@ -112,69 +110,67 @@
     margin-right: 180px;
   }
 
-
-  
   .site-navigation-current a:not([href]) {
     background-color: var(--basic-white);
   }
 
   .site-navigation a {
     color: var(--basic-black);
-    }
-    
-    .site-navigation a:hover,
-    .site-navigation a:focus{
+  }
+
+  .site-navigation a:hover,
+  .site-navigation a:focus{
     color: var(--basic-blue);
-    }
+  }
 
-    .site-navigation a:active{
-      color: var(--basic-black);
-      mix-blend-mode: normal;
-      opacity: 0.3;
-    }
+  .site-navigation a:active{
+    color: var(--basic-black);
+    mix-blend-mode: normal;
+    opacity: 0.3;
+  }
+
+  .site-navigation-inner .navigation-here {
+    color: var(--basic-brown);
+  }
     
-    .navigation-current {
-      color: var(--basic-brown)
-    }
+  .sedona-info {
+    height: 216px;
+    text-align: center;
+    background-color: var(--basic-white);
+  }
 
-    .sedona-info {
-      height: 216px;
-      text-align: center;
-      background-color: var(--basic-white);
-    }
+  .info-title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--basic-black);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
 
-    .info-title {
-      font-size: 21px;
-      line-height: 26px;
-      font-weight: bold;
-      color: var(--basic-black);
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-top: 40px;
+  }
 
-    }
+  .info-text {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-dark);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-    .info-text {
-      font-size: 14px;
-      line-height: 26px;
-      color: var(--basic-dark);
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
+  .img-container {
+    background-image: url(../img/sedona_background_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 76px;
+  }
 
-    .img-container {
-      background-image: url(../img/sedona_background_1.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      text-align: center;
-      padding-top: 76px;
-    }
-
-    .img-form {
-      transform: translateY(11%);
-    }
+  .img-form {
+    transform: translateY(11%);
+  }
 
   
     /* Features */
@@ -303,8 +299,6 @@
       background-color: var(--basic-white);
     }
 
-    
-
     /* Appointment */
     
     .appointment {
@@ -387,9 +381,7 @@
       font-weight: bold;
     }
     
-    
-    .appointment-item input {
-      
+    .appointment-item input { 
       font-size: 14px;
       line-height: 26px;
       font-weight: bold;
@@ -406,9 +398,7 @@
       width: 114px;
       height: 38px;
     }
-
-
-    
+  
     .appointment-item input:hover{
     background-color: var(--special-app-hover);
     }
@@ -442,35 +432,117 @@
         background-color: var(--special-blue-1);
       }
 
-
-
-      .filters {
+      .filter {
       background-image: url(../img/background_blur.jpg);
       background-repeat: no-repeat;
       background-position: center;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      grid-template-rows: 217px;
+      border: none;     
+      }
+
+      legend {
+        margin-bottom: 25px;
+      }
+
+      .filter-option {
+        margin-bottom: 25px;
       }
 
       .infrastructure {
-        width: 25%
+        margin-top: 26.5px;
+        margin-left: 72px;
       }
 
       .type_l {
-        width: 25%
+        margin-top: 26.5px;
+        margin-left: 20px;
       }
 
       .cost_per_day {
-        width: 50%
+        margin-top: 26.5px;
+        margin-left: 200px;
       }
 
+      .range-container {
+        display: flex;
+        justify-content:space-around;
+        width: 224px;
+        height: 36px;
+        border: 2px solid var(--basic-white);
+        border-radius: 2px;
+      }
+
+      .range-limit {
+        padding-top: 6.5px;
+      }
+
+      .range-limit-from {
+        padding-left: 28px;
+      }
+
+      .filter-button {
+        margin-top: 25px;
+        margin-left: 30px;
+      }
+
+    /* Checkbox */
+
+    .check_box {
+      position: absolute;
+      margin-left: -40px;
+      width: 23px;
+      height: 23px;
+      background-image: url(../img/checkbox-off.svg);
+  }
+     
+   /* Check */
+
+   .check {
+     padding-left: 40px;
+   }
+
+   .check_input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
+}
+
+    /* Checked */
+
+  .check_input:checked + .check_box {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+  .check_input:focus + .check_box {
+    background-image: url(../img/checkbox-off.svg);
+}
+
+  .check_input:checked:focus + .check_box {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+
+    /* disabled*/
+
+  .check_input:disabled + .check_box {
+    background-image: url(../img/checkbox-off-disabled.svg);
+}
+
+  .check_input:checked:disabled + .check_box {
+    background-image: url(../img/checkbox-on-disabled.svg);
+}
 
     /* Filters */
 
+    .fieldset {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
   
-  
-
     .filter legend {
       font-size: 16px;
       line-height: 21px;
@@ -502,7 +574,25 @@
     .filter-button:focus  {
       color: var(--basic-black);
       background-color: var(--basic-white);
+    }
 
+    .fieldset-range {
+      margin-bottom: 15px;
+    }
+
+    .show-button {
+      border: 2px solid var(--basic-white);
+      border-radius: 2px;
+      background-color: transparent;
+      color: var(--basic-white);
+      text-transform: uppercase;
+      padding: 5px 34px;
+    }
+
+    .show-button:hover,
+    .show-button:focus {
+      color: var(--basic-black);
+      background-color: var(--basic-white);
     }
 
     /* Hotel list */
@@ -528,27 +618,6 @@
       list-style: none;
     }
 
- 
-  
-    .sort_type{ 
-      font-size: 12px;
-      line-height: 18px;
-      color: var(--basic-black);
-      /*mix-blend-mode: normal;
-      opacity: 0.3;
-      не понял, как задать цвет в состоянии покоя и в состоянии активный
-      */
-    }
-
-    .sort_type a:hover,
-    .sort_type a:focus {
-    color: var(--basic-blue);
-    }
-
-    .sort_type a:active {
-      color: var(--basic-black);
-    }
-
     .hotels_list {
       list-style: none;
     }
@@ -570,8 +639,10 @@
       font-weight: bold;
       font-size: 14px;
       line-height: 21px;
+      text-transform: uppercase;
       color: var(--basic-white);
       background-color: var(--basic-blue);
+      padding: 3px 17px;    
     }
 
     .info_button:hover,
@@ -587,10 +658,12 @@
       font-weight: bold;
       font-size: 14px;
       line-height: 21px;
+      text-transform: uppercase;
       color: var(--basic-white);
       background-color: var(--basic-brown);
+      padding: 3px 17px;
     }
-
+  
     .book_button:hover,
     .book_button:focus {
       background-color: var(--special-brown);
@@ -600,11 +673,21 @@
       background-color: var(--special-brown-1);
     }
 
+    .rate_numbers {
+    height: 27px;
+    width: 110px;
+    border: 0;
+    background-color: var(--special-gray-1);
+
+    }
+
     .hotel_rate {
       font-size: 14px;
       line-height: 21px;
       color: var(--special-gray-3);
-      background-color: var(--special-gray-1);
+      margin-left: 15px;
+      margin-top: 6px;
+      margin-bottom: 3px;
     }
 
     .map {
@@ -613,6 +696,219 @@
       justify-content: center;
     }
 
+     /* results */
+
+     .hotel_results {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-template-rows: 68px;
+       background-color: var(--basic-white);
+       padding-top: 29px;
+       padding-left: 73px;
+     }
+
+     .sort {
+       margin-left: -122px;
+     }
+     
+     .hotels_sort {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       gap: 32px;
+       margin-left: -625px;  
+     }
+
+     .sort_type{ 
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--basic-black);
+      /*mix-blend-mode: normal;
+      opacity: 0.3;
+      не понял, как задать цвет в состоянии покоя и в состоянии активный
+      */
+    }
+
+    .sort_type a:hover,
+    .sort_type a:focus {
+    color: var(--basic-blue);
+    }
+
+    .sort_type a:active {
+      color: var(--basic-black);
+    }
+
+    .sort_calm {
+      color: var(--basic-black);
+      opacity: 0.3; 
+      border-bottom: 1px dotted var(--basic-blue);
+      }
+
+
+     .sort_filter:hover,
+     .sort_filter:focus {
+      color: var(--basic-blue);
+      border-bottom: 1px dotted var(--basic-blue);
+      opacity: 1;
+     }
+
+     .sort_filter:active {
+      color: var(--basic-black);
+     }
+
+     .sort_active {
+      color: var(--basic-blue);
+     }
+
+     
+
+     .triangle_button_container {
+       margin-left: 172px;
+     }
+
+     .triangle_up {
+       background: url(../img/t_calm_up.svg) no-repeat;
+       background-size: contain;
+       border: none;
+       width: 11px;
+       height: 10px;
+       padding-right: 12px;
+     }
+
+     .triangle_up:hover,
+     .triangle_up:focus {
+      background: url(../img/t_hover_up.svg) no-repeat;
+      background-size: contain;
+      border: none;
+     }
+
+     .triangle_up:active {
+      background: url(../img/t_press_up.svg) no-repeat;
+      background-size: contain;
+      border: none;
+     }
+
+     .triangle_down {
+       background: url(../img/t_active_down.svg) no-repeat;
+       background-size: contain;
+       border: none;
+       width: 11px;
+       height: 10px;
+     }
+
+     
+     .triangle_down:hover,
+     .triangle_down:focus {
+      background: url(../img/t_hover_down.svg) no-repeat;
+      background-size: contain;
+      border: none;
+     }
+
+     .triangle_down:active {
+      background: url(../img/t_press_down.svg) no-repeat;
+      background-size: contain;
+      border: none;
+     }
+
+
+     .hotels_item {
+       display: grid;
+       grid-template-columns: 237px 780px 183px;
+       grid-template-rows: 150px;
+       background-color: var(--basic-white);
+       outline: 1px solid var(--special-app-border); 
+     }
+
+     .hotel_name {
+       margin-top: 26px;
+     }
+
+     .type_price {
+       margin-top: -25px;
+     }
+
+
+
+
+
+
+     .hotel_picture {
+       margin-top: 30px;
+       margin-left: 73px;
+     }
+
+     .hotel_type_h {
+       padding-right: 38px;
+     }
+
+     .hotel_type_m {
+      padding-right: 65px;
+    }
+
+    .hotel_type_a {
+      padding-right: 22px;
+    }
+
+     /* какое-то дерьмо вышло 
+
+     .hotel_information {
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+       grid-template-areas: "name name"
+                            "type price"
+                            "info book";
+     }
+
+      .hotel_name {
+      grid-area: name;
+      }
+
+      .hotel_type {
+      grid-area: type;
+      }
+
+      .hotel_price {
+      grid-area: price;
+      }
+
+      .info_button {
+      grid-area: info;
+      display: inline-block;
+      }
+
+      .book_button {
+      grid-area: book;
+      display: inline-block;
+      }
+*/
+
+      .type_price {
+        display: flex;
+      }
+
+
+      .hotel_rate_container {
+        margin-top: 29px;
+        margin-right: 72px;  
+      }
+
+      .amara_rate_stars {
+        margin-left: 5px;
+      }
+
+      .desert_rate_stars {
+        margin-left: 49px;
+      }
+
+      .poco_rate_stars {
+        margin-left: 70px;
+      }
+
+      .rate_numbers{
+        margin-top: 42px;
+      }
+
+      
 
      /* Main footer */
 

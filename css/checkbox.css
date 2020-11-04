@@ -1,0 +1,78 @@
+
+  body {
+    margin: 0;
+    padding: 25px;
+    padding-top: 25px;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: sans-serif;
+    background-color: tomato;
+  }
+
+  .option {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+  .option {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
+  .check {
+    padding-left: 2em;
+}
+
+  .check_box {
+      position: absolute;
+      margin-left: -2em;
+      width: 23px;
+      height: 23px;
+      background-image: url(../img/checkbox-off.svg);
+  }
+
+
+ /* Check */
+
+.check_input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+ /* Checked */
+
+ .check_input:checked + .check_box {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.check_input:focus + .check_box {
+    background-image: url(../img/checkbox-off.svg);
+}
+
+.check_input:checked:focus + .check_box {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+
+ /* disabled*/
+
+ .check_input:disabled + .check_box {
+    background-image: url(../img/checkbox-off-disabled.svg);
+}
+
+.check_input:checked:disabled + .check_box {
+    background-image: url(../img/checkbox-on-disabled.svg);
+}
+
+
+
+.show-button {
+    border: 2px solid var(--basic-white);
+    background-color: transparent;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    padding: 5px 34px;
+  }
