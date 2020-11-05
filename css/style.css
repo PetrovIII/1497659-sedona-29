@@ -300,192 +300,316 @@
     }
 
     /* Appointment */
+
+        /* Appointment */
     
-    .appointment {
-      /* временно увеличу высоту */
-      height: 291px;
-      list-style: none;
+        .appointment {
+          position: relative;
+          height: 666px;
+          list-style: none;
+          text-align: center;
+          background-color: var(--basic-white);
+        }
+    
+        .appointment-map {
+          padding-top: 120px;
+        }
+    
+        .appointment h2 {
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 24px;
+          margin: auto;
+          padding-top: 68px;
+        }
+    
+        .button-hotel {
+        width: 568px;
+        height: 86px;
+        font: inherit;
+        text-align: center;
+        font-size: 21px;
+        line-height: 26px;
+        color: var(--basic-white);
+        vertical-align: middle;
+        text-transform: uppercase;
+        background-color: var(--basic-brown);
+        border: none;
+        }
+    
+        .button-hotel:hover,
+        .button-hotel:focus {
+        background-color: var(--special-brown);
+        }
+        
+        .button-hotel:active {
+          /* как задать затемнение цвета текста при нажатии? */
+          background-color: var(--special-brown-1);
+          border: none;
+           /* в браузере появляется черная граница?? */
+        }
+    
+        .hotel-search {
+          width: 568px;
+          height: 86px;
+          color: #ffffff;
+          font-size: 21px;
+          text-transform: uppercase;
+          line-height: 26px;
+          font-family: "PT Sans","Arial", sans-serif;
+          text-align: center;
+          background-color: #766357;
+          margin: 0px;
+          font-weight: 700;
+          box-sizing: border-box;
+          border: none;
+      }
+    
+        .search-wrapper {
+          position: absolute;
+          top: 196px;
+          left: 0px;
+          width: 100%;
+        }
+    
+        .search {
+          width: 568px;
+          height: 480px;
+          background-color: #ffffff;
+          margin: 0px auto;
+        }
+    
+        .form {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding-top: 55px;
+        }
+    
+        .form-line {
+          position: relative;
+          width: 478px;
+          display: flex;
+      }
+    
+      .form-line2 {
+        padding-top: 27px;
+        padding-bottom: 29px;
+      }
+    
+      .form-line3 {
+        display: flex;
+        padding-bottom: 54px;
+    }
+    
+    .form-small-button {
+      width: 38px;
+      height: 38px;
+      margin: 0px;
+      background-color: #f2f2f2;
+      border: none;
+      color: #ababab;
+      font-weight: bold;
+      font-size: 23px;
+      font-family: "PT Sans","Arial", sans-serif;
+    }
+    
+    .form-small-button:hover {
+      color: var(--basic-dark);
+  }
+
+    .age {
+      width: 38px;
+      margin: 0px;
+      text-transform: uppercase;
+      font-weight: 700;
       text-align: center;
-      background-color: var(--basic-white);
-      position: relative;
-    }
-
-    .appointment h2 {
-      font-weight: bold;
-      font-size: 30px;
-      line-height: 24px;
-      margin: auto;
-      padding-top: 68px;
-    }
-
-
-
-    .button-hotel {
-    width: 568px;
-    height: 86px;
-    margin-top: 42px;
-    font: inherit;
-    text-align: center;
-    font-size: 21px;
-    line-height: 26px;
-    color: var(--basic-white);
-    vertical-align: middle;
-    text-transform: uppercase;
-    background-color: var(--basic-brown);
-    border: none;
-    }
-
-    .button-hotel:hover,
-    .button-hotel:focus {
-    background-color: var(--special-brown);
+      background-color: #f2f2f2;
+      border: none;
     }
     
-    .button-hotel:active {
-      /* как задать затемнение цвета текста при нажатии? */
-      background-color: var(--special-brown-1);
-      border: none;
-       /* в браузере появляется черная граница?? */
+      .info {
+        width: 120px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-right: 3px;
+        padding-top: 5px;
+        padding-left: 10px;
+        box-sizing: border-box;
     }
 
-    .form {
+      .info-position {
+        padding: 0;
+        margin-left: -5px;
+        margin-right: 8px;
+      }
+    
+    .info-age-child {
+      width: 69px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-left: 43px;
+      padding-top: 7px;
+    }
+    
+      .text {
+        width: 337px;
+        background-color: #f2f2f2;
+        border: none;
+        height: 38px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-left: 10px;
+      }
+    
+      .fields-after {
+        position: absolute;
+        display: block;
+        top: 9px;
+        right: 15px;
+        width: 21px;
+        height: 22px;
+        background-color: transparent;
+        background-image: url(../img/calendar.png);
+        background-repeat: no-repeat;
+    }
+
+    .fields-after-1 {
       position: absolute;
-      top: -152px;
-      width: 568px;
-      height: 395px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: stretch;
-      background-color: var(--basic-white);
+      display: block;
+      top: 35px;
+      right: 15px;
+      width: 21px;
+      height: 22px;
+      background-color: transparent;
+      background-image: url(../img/calendar.png);
+      background-repeat: no-repeat;
     }
 
-    .app-container {
-      display: flex;
-    }
+      .fields-after:hover {
+        background-image: url(../img/calendar-black.png);
+      }
 
-    .appointment-item .input-count {
-      width: 30px;
-    }
-   
-    .appointment h3 {
-      font-size: 21px;
-      line-height: 26px;
-      font-weight: bold;
+    .submit-button {
       color: var(--basic-white);
-      background-color: var(--basic-brown);
-    }
-    
-    .appointment label{
-      font-size: 14px;
+      font-size: 21px;
+      font-family: "PT Sans","Arial", sans-serif;
+      font-weight: 700;
       line-height: 26px;
-      font-weight: bold;
-    }
-    
-    .appointment-item input { 
-      font-size: 14px;
-      line-height: 26px;
-      font-weight: bold;
-      background-color: var(--special-gray-1);
-      border: none;
-    }
-
-    .input-date {
-      width: 346px;
-      height: 38px;
-    }
-
-    .input-count {
-      width: 114px;
-      height: 38px;
-    }
-  
-    .appointment-item input:hover{
-    background-color: var(--special-app-hover);
-    }
-    
-    .appointment-item input:focus{
-    background-color: var(--basic-white);
-    border: 2px solid var(--special-app-border);
-    }
-    
-    .button-submit {
+      text-transform: uppercase;
+      background-color: #81b3d2;
+      padding: 5px 120px;
       width: 458px;
       height: 58px;
-      text-align: center;
-      font-size: 21px;
-      line-height: 26px;
-      color: var(--basic-white);
-      vertical-align: middle;
-      text-transform: uppercase;
-      background-color: var(--basic-blue);
       border: none;
-      margin-left: 55px;
-      }
-  
-      .button-submit:hover,
-      .button-submit:focus {
-      background-color: var(--special-blue);
-      }
+    }
+    
+    
+        .form-container {
+          background-color: #fff;
+        }
+    
+        .appointment h3 {
+          font-size: 21px;
+          line-height: 26px;
+          font-weight: bold;
+          color: var(--basic-white);
+          background-color: var(--basic-brown);
+        }
+        
+        .appointment label{
+          font-size: 14px;
+          line-height: 26px;
+          font-weight: bold;
+        }
+        
+        
+        .appointment-item input {
+          
+          font-size: 14px;
+          line-height: 26px;
+          font-weight: bold;
+          background-color: var(--special-gray-1);
+          border: none;
+        }
+    
+        .input-date {
+          width: 346px;
+          height: 38px;
+        }
+    
+        .input-count {
+          width: 114px;
+          height: 38px;
+        }
+    
+    
+        
+        .appointment-item input:hover{
+        background-color: var(--special-app-hover);
+        }
+        
+        .appointment-item input:focus{
+        background-color: var(--basic-white);
+        border: 2px solid var(--special-app-border);
+        }
+        
+        .button-submit {
+          width: 458px;
+          height: 58px;
+          text-align: center;
+          font-size: 21px;
+          line-height: 26px;
+          color: var(--basic-white);
+          vertical-align: middle;
+          text-transform: uppercase;
+          background-color: var(--basic-blue);
+          border: none;
+          margin-left: 55px;
+          }
       
-      .button-submit:active {
-        /* как задать затемнение цвета текста при нажатии? */
-        background-color: var(--special-blue-1);
+          .button-submit:hover,
+          .button-submit:focus {
+          background-color: var(--special-blue);
+          }
+          
+          .button-submit:active {
+            /* как задать затемнение цвета текста при нажатии? */
+            background-color: var(--special-blue-1);
+          }
+    
+    
+    
+          .filters {
+          background-image: url(../img/background_blur.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          }
+    
+          .infrastructure {
+            margin-top: 26.5px;
+            margin-left: 72px;
+        }
+
+          .type_l {
+            margin-top: 26.5px;
+            margin-left: 20px;
+         }
+    
+         .cost_per_day {
+          width: 300px;
+          margin-top: 26.5px;
+          margin-left: 200px;
       }
 
-      .filter {
-      background-image: url(../img/background_blur.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr 2fr;
-      grid-template-rows: 217px;
-      border: none;     
-      }
-
-      legend {
-        margin-bottom: 25px;
-      }
-
-      .filter-option {
-        margin-bottom: 25px;
-      }
-
-      .infrastructure {
-        margin-top: 26.5px;
-        margin-left: 72px;
-      }
-
-      .type_l {
-        margin-top: 26.5px;
-        margin-left: 20px;
-      }
-
-      .cost_per_day {
-        margin-top: 26.5px;
-        margin-left: 200px;
-      }
-
-      .range-container {
-        display: flex;
-        justify-content:space-around;
-        width: 224px;
-        height: 36px;
-        border: 2px solid var(--basic-white);
-        border-radius: 2px;
-      }
-
-      .range-limit {
-        padding-top: 6.5px;
-      }
-
-      .range-limit-from {
-        padding-left: 28px;
-      }
-
-      .filter-button {
-        margin-top: 25px;
-        margin-left: 30px;
-      }
+          
 
     /* Checkbox */
 
@@ -537,6 +661,16 @@
 
     /* Filters */
 
+    .filter {
+      background-image: url(../img/background_blur.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      grid-template-rows: 217px;
+      border: none;
+  }
+
     .fieldset {
       border: 0;
       margin: 0;
@@ -550,6 +684,10 @@
       color: var(--basic-white);
     }
 
+    legend {
+      margin-bottom: 25px;
+  }
+
     .filter ul {
       list-style: none;
       font-size: 14px;
@@ -557,10 +695,32 @@
       color: var(--basic-white);
     }
 
+    .range-container {
+      display: flex;
+      justify-content: space-around;
+      width: 318px;
+      height: 36px;
+      border: 2px solid var(--basic-white);
+      border-radius: 2px;
+  }
+
     .range-limit {
       font-size: 14px;
       line-height: 21px;
       color: var(--basic-white);
+      padding-top: 6.5px;
+    }
+
+    .range-limit-from {
+      padding-left: 28px;
+  }
+
+    .filter-option {
+      margin-bottom: 25px;
+  }
+
+    .filter-option:last-child {
+      margin-bottom: 0;
     }
 
     .filter-button {
@@ -581,18 +741,63 @@
     }
 
     .show-button {
+      font-size: 14px;
+      line-height: 21px;
       border: 2px solid var(--basic-white);
       border-radius: 2px;
       background-color: transparent;
       color: var(--basic-white);
       text-transform: uppercase;
       padding: 5px 34px;
+      margin-left: 95px;
     }
 
     .show-button:hover,
     .show-button:focus {
       color: var(--basic-black);
       background-color: var(--basic-white);
+    }
+
+    /* Tool bar */
+
+    .range-controls {
+      position: relative;
+      margin-top: 22px;
+    }
+    
+    .scale {
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.3);
+      
+    }
+    
+    .bar {
+      width: 80%;
+      height: 2px;
+      background-color: #ffffff;
+    
+    }
+    
+    .range {
+      position: absolute;
+      top:-9px;
+      height: 4px;
+      width: 4px;
+      background-color: #ababab;
+      border:8px solid #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+      cursor: pointer;
+    }
+    
+    .range2 {
+      left: 80%;
+    
+    }
+    
+    .range:hover {
+      background-color:  #1c4f80;
+      border:10px solid #ffffff;
     }
 
     /* Hotel list */
@@ -827,11 +1032,6 @@
        margin-top: -25px;
      }
 
-
-
-
-
-
      .hotel_picture {
        margin-top: 30px;
        margin-left: 73px;
@@ -910,78 +1110,135 @@
 
       
 
-     /* Main footer */
+      /* Main footer */
 
-    .main-footer {
-      font-weight: bold;
-      font-size: 21px;
-      line-height: 26px;
-      color: var(--basic-black);
-    }
-    
-    .main-footer .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      width: 100%;
-      height: 120px;
-      background-color: var(--special-footer-background); 
-      position: absolute;
-      bottom: 0:
+      .footer-container .main-footer {
+        position: relative;
+      }
+
+      .page-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 120px;
+        padding-right: 101px;
+        background-color: var(--special-gray-1);
+        opacity: 0.9;
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 26px;
+        color: var(--basic-black);
+        bottom: -118px;
+      }
+
+      .footer {
+        background-color: var(--basic-white);
+      }
+
+      .page-footer .main-footer {
+          width: 100%;
+          position: absolute;
+          bottom: 30px;
+          left: 0px;
+          opacity: 0.9;
+      }
+
+      .footer-contacts {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-contacts a {
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 26px;
+        color: var(--basic-black);
+        background-color: transparent;
+      }
+
+      .social-container-item {
+        width: 45px;
+        height: 48px;
+        background-color: var(--basic-blue);
+        cursor: pointer;
+        margin-right: 6px;
+      }
+
+      .social-container-item:last-child {
+        margin-right: 0;
+      }
+
+
+      .social-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 36px;
+        text-align: center;
+        list-style: none;
+      }
+      
+      /* Social button */
+
+      .social {
+        width: 150px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .social-link {
+        display: inline-block;
+        width: 46px;
+        height: 48px;
+        text-align: center;
+        background-color: #81b3d2;
+        padding-top: 11px;
+        box-sizing: border-box;
+      }
+      
+      .social-link:hover {
+        background-color: var(--special-blue);
+      }
+
+      .social-link:active {
+        background-color: var(--special-blue-1);
+      }
+
+      .button-copyright {
+        display: inline-block;
+      }
+
+      .button-copyright::before {
+        content: "";
+        background-image: url(../img/logo-htmlacademy-hover.svg);
+        width: 115px;
+        height: 40px;
+        display: none;
+      }
+
+      .button-copyright:hover::before {
+        display: block;
     }
 
-    .footer-contacts a {
-      font-weight: bold;
-      font-size: 21px;
-      line-height: 26px;
-      color: var(--basic-black);
-      background-color: transparent;
-    }
+      .button-copyright:hover .button-copyright-img {
+        display: none;
+      }
 
-    
-    .social-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 6px;
-      margin-top: 36px;
-      text-align: center;
-      list-style: none;
-    }
-    
-    /* Social button */
+      /* FOOTER */
 
-    .social-button {
-      color: inherit; 
-    }
-    
-    .social-button {
-      background-color: var(--basic-blue);  
-      width: 46px;
-      height: 48px;
-      text-align: center;
-    }
+      .footer-copyright b {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        color: var(--basic-black);
+      }
 
-    .social-button:hover,
-    .social-button:focus {
-    background-color: var(--special-blue);
-    }
-    
-    .social-button:active {
-      background-color: var(--special-blue-1);
-    }
-    
-    .footer-copyright b {
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 26px;
-      color: var(--basic-black);
-    }
+      .footer-copyright .button-copyright:hover,
+      .footer-copyright .button-copyright:focus {
+      color: var(--basic-blue);
+      }
 
-    .footer-copyright .button-copyright:hover,
-    .footer-copyright .button-copyright:focus {
-    color: var(--basic-blue);
-    }
-
-    .footer-copyright .button-copyright:active {
-    color: var(--basic-gray)  
-    }
+      .footer-copyright .button-copyright:active {
+      color: var(--basic-gray)  
+      }
