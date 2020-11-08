@@ -12,19 +12,26 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo">
           <img src="img/sedona_logo.svg" width="138" height="70" alt="Герб города Седона">
         </a>
-     
-       <ul class="site-navigation site-navigation-inner">
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a class="navigation-here" href="inner.html">Гостиницы</a></li>
-      </ul>
-      </nav>
-     </header>
 
+    <div class="main-header-bar">
+      <div class="main-navigation-wrapper">
+       <ul class="site-navigation">
+        <li>
+        <a class="navigation-left-1" href="blank.html">Информация</a>
+        <a class="navigation-left-2" href="blank.html">Фото и видео</a>
+      </li>
+        <li>
+        <a class="navigation-right-2" href="blank.html">Карта штата</a>
+        <a class="navigation-right-1 navigation-here" href="inner.html">Гостиницы</a>
+        </li>
+       </ul>
+      </div>
+    </div>
+      </nav>
+    </header>
      <main class=" inner-page container">
       
       <h1 class="visually-hidden">Параметры поиска</h1>
@@ -231,11 +238,13 @@
       </ul>
     </main>
     
-      <footer class="page-footer main-footer">
+    <div class="footer-container">
+    
+      <footer class="page-footer">
         <h2 class="visually-hidden">Как c нами связаться</h2>
     
        <section class="footer-contacts">
-         <span>#visitSEDONA</span>
+         <span class="hashtag">#visitSEDONA</span>
          <a class="footer-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
        </section>
     
@@ -257,15 +266,15 @@
           </li> 
         </ul>
     
-          <div>
-            <p class="footer-copyright">  
-              <b>website by</b>
+          <div class="footer-copyright">
+              <span class="website" >website by</span>
               <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="button-copyright-img" src="img/logo-htmlacademy.svg" width="115" height="40" alt=">HTML Academy">
+                <!-- <img class="button-copyright-img" src="img/logo-htmlacademy.svg" width="115" height="40" alt=">HTML Academy"> -->
               </a>
-            </p>
           </div>
       </footer>
+      </div>
+  
 
   </body>
 </html>
