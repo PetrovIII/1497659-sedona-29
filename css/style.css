@@ -465,6 +465,7 @@ img {
   text-align: center;
   background-color: var(--basic-brown);
   margin: 0px;
+  padding-left: 9px;
   font-weight: 700;
   box-sizing: border-box;
   border: none;
@@ -491,6 +492,7 @@ img {
   height: 480px;
   background-color: var(--basic-white);
   margin: 0px auto;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .form {
@@ -546,50 +548,61 @@ img {
   border: none;
 }
 
+
 .info {
   width: 120px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   color: var(--basic-black);
-  margin-left: 1px;
-  padding-top: 6px;
+  margin-left: -5px;
+  margin-right: 6px;
+  padding-top: 5px;
   box-sizing: border-box;
 }
 
 .info-position {
   padding-top: 5px;
-  margin-left: -10px;
-  margin-right: 8px;
+  margin-left: -14px;
+  margin-right: 15px;
 }
 
 .info-age-child {
-  width: 69px;
+  width: 67px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   color: var(--basic-black);
-  margin-left: 39px;
+  margin-left: 35px;
   padding-top: 5px;
+  margin-right: 11px;
 }
 
 .text {
-  width: 337px;
+  width: 332px;
   background-color: var(--special-gray-1);
   border: none;
-  height: 38px;
+  height: 35px;
   text-transform: uppercase;
   font-weight: 700;
-  padding-left: 15px;
+  padding-left: 14px;
+  margin-bottom: 3px;
 }
+
+.text-out {
+  height: 35px;
+  padding-top: 0;
+  padding-left: 13px;
+}
+
 
 .fields-after {
   position: absolute;
   display: block;
-  top: 9px;
-  right: 15px;
+  top: 7px;
+  right: 19px;
   width: 21px;
-  height: 22px;
+  height: 23px;
   background-color: transparent;
   background-image: url(../img/calendar.svg);
   background-repeat: no-repeat;
@@ -598,10 +611,10 @@ img {
 .fields-after-1 {
   position: absolute;
   display: block;
-  top: 35px;
-  right: 15px;
+  top: 34px;
+  right: 19px;
   width: 21px;
-  height: 22px;
+  height: 23px;
   background-color: transparent;
   background-image: url(../img/calendar.svg);
   background-repeat: no-repeat;
@@ -741,11 +754,16 @@ img {
   background-image: url(../img/checkbox-off.svg);
 }
 
+.check-box-t {
+  margin-left: -42px;
+}
+
 /* Check */
 
 .check {
   padding-left: 40px;
 }
+
 
 .check-input {
   position: absolute;
@@ -787,8 +805,9 @@ img {
   background-position: center;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: 217px;
+  grid-template-rows: 219px;
   border: none;
+  margin-top:-2px;
 }
 
 .fieldset {
@@ -797,15 +816,19 @@ img {
   padding: 0;
 }
 
-.filter legend {
+.filter .f-legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
   color: var(--basic-white);
 }
 
-legend {
-  margin-bottom: 25px;
+.f-legend {
+  margin-bottom: 26px;  
+}
+
+.f-legend-range {
+  margin-bottom: 12px;
 }
 
 .filter .filter-list {
@@ -818,10 +841,17 @@ legend {
 .range-container {
   display: flex;
   justify-content: space-around;
-  width: 318px;
-  height: 36px;
+  width: 313px;
+  height: 32px;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
+  margin-bottom: -2px;
+}
+
+.stick-img {
+  position: absolute;
+  margin-left: 159px;
+  margin-top: -27px;
 }
 
 .range-limit {
@@ -832,12 +862,38 @@ legend {
 }
 
 .range-limit-from {
-  padding-left: 28px;
+  margin-top: -1px;
+  padding-left: 15px; 
+  margin-right: -3px;
 }
+
+.range-limit-to {
+  margin-top: -1px;
+  padding-left: 20px;
+  margin-right: -2px;
+} 
 
 .filter-option {
   margin-bottom: 25px;
 }
+
+.filter-option-p {
+  margin-bottom: 24px;
+}
+
+.fielfset-type {
+  margin-left: 6px;
+}
+
+.filter-list-type {
+  margin-left: 3px;
+}
+
+.filter-option-t {
+  margin-bottom: 24px;
+}
+
+
 
 .filter-option:last-child {
   margin-bottom: 0;
@@ -857,6 +913,7 @@ legend {
 }
 
 .fieldset-range {
+  padding-left: 10px;
   margin-bottom: 15px;
 }
 
@@ -868,7 +925,7 @@ legend {
   background-color: transparent;
   color: var(--basic-white);
   text-transform: uppercase;
-  padding: 5px 34px;
+  padding: 5px 34px 6px;
   margin-left: 95px;
 }
 
@@ -883,6 +940,7 @@ legend {
 .range-controls {
   position: relative;
   margin-top: 22px;
+  margin-bottom: 18px;
 }
 
 .scale {
@@ -942,6 +1000,7 @@ legend {
 
 .hotels-list {
   list-style: none;
+  margin-bottom: 126px;
 }
 
 .hotel-name {
@@ -965,7 +1024,8 @@ legend {
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-blue);
-  padding: 3px 17px;
+  padding: 3px 17px 6px;
+  margin-right: 2px;
 }
 
 .info-button:hover,
@@ -984,7 +1044,7 @@ legend {
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-brown);
-  padding: 3px 17px;
+  padding: 3px 17px 6px;
 }
 
 .book-button:hover,
@@ -1008,8 +1068,8 @@ legend {
   line-height: 21px;
   color: var(--special-gray-3);
   margin-left: 15px;
-  margin-top: 6px;
-  margin-bottom: 3px;
+  padding-top: 3px;
+  margin-bottom: 5px;
 }
 
 .map {
@@ -1023,22 +1083,24 @@ legend {
 .hotel-results {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 68px;
+  grid-template-rows: 58px;
   background-color: var(--basic-white);
   padding-top: 29px;
   padding-left: 73px;
 }
 
 .sort {
-  margin-left: -122px;
+  margin-top: 2px;
+  margin-left: -118px;
 }
 
 .hotels-sort {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 32px;
-  margin-left: -625px;
+  gap: 33px;
+  margin-top: 3px;
+  margin-left: -614px;
 }
 
 .sort-type {
@@ -1081,13 +1143,18 @@ legend {
   margin-left: 172px;
 }
 
+.button-triangle {
+  margin-top: 11px;
+  margin-left: 3px;
+}
+
 .triangle-up {
   background: url(../img/t-calm-up.svg) no-repeat;
   background-size: contain;
   border: none;
   width: 11px;
   height: 10px;
-  padding-right: 12px;
+  padding-right: 10px;
 }
 
 .triangle-up:hover,
@@ -1129,21 +1196,62 @@ legend {
   grid-template-columns: 237px 780px 183px;
   grid-template-rows: 150px;
   background-color: var(--basic-white);
-  outline: 1px solid var(--special-app-border);
+  border-top: 1px solid var(--special-app-border);
 }
 
+.hotels-item-last {
+  border-bottom: 1px solid var(--special-app-border);
+} 
+
+
 .hotel-name {
-  margin-top: 26px;
+  margin-top: 24px;
+  margin-bottom: 18px;
 }
+
+.hotel-name-a {
+  margin-top: 22px;;
+}
+
+.hotel-name-d {
+  margin-top: 23px;
+  margin-left: 1px;
+}
+
+.hotel-name-v {
+  margin-top: 24px;
+}
+
+.type-price-a {
+  margin-bottom: 4px;
+}
+
+.type-price-d {
+  margin-bottom: 3px;
+} 
+
+.type-price-v {
+  margin-bottom: 2px;
+} 
 
 .type-price {
   margin-top: -25px;
 }
 
 .hotel-picture {
-  margin-top: 30px;
+  margin-top: 29px;
   margin-left: 73px;
+  background-color: var(--basic-brown);
 }
+
+.hotel-picture-d {
+  margin-top: 29px;
+}
+
+.hotel-picture-v {
+  margin-top: 29px;
+}
+
 
 .hotel-type-h {
   padding-right: 38px;
@@ -1163,19 +1271,48 @@ legend {
 
 .hotel-rate-container {
   margin-top: 29px;
-  margin-right: 72px;
+  margin-right: 60px;
 }
 
 .amara-rate-stars {
-  margin-left: 5px;
+  margin-left: 21px;
+}
+
+.amara-r-s {
+  padding-right: 3px;
+}
+
+.amara-r-s-2 {
+  padding-right: 3px;
+}
+
+.amara-r-s-3 {
+  padding-right: 1px;
 }
 
 .desert-rate-stars {
-  margin-left: 49px;
+  margin-top: -1px;
+  margin-left: 47px;
+}
+
+/* .poco-rate-stars {
+  margin-top: 0px;
+} */
+
+.desert-r-s {
+  padding-right: 2px;
+}
+
+.desert-r-s-1 {
+  padding-right: 2px; 
 }
 
 .poco-rate-stars {
   margin-left: 70px;
+}
+
+.poco-r-s {
+  padding-right: 2px; 
 }
 
 .rate-numbers {
