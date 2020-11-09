@@ -999,8 +999,9 @@ img {
 }
 
 .hotels-list {
+  box-sizing: border-box;
   list-style: none;
-  margin-bottom: 126px;
+  margin-bottom: 125px;
 }
 
 .hotel-name {
@@ -1197,9 +1198,10 @@ img {
   grid-template-rows: 150px;
   background-color: var(--basic-white);
   border-top: 1px solid var(--special-app-border);
+  /* border-bottom: 1px solid var(--special-app-border); */
 }
 
-.hotels-item-last {
+.last {
   border-bottom: 1px solid var(--special-app-border);
 } 
 
@@ -1345,6 +1347,10 @@ img {
   bottom: 0;
   left: 0px;
   opacity: 0.9;
+}
+
+.inner-page-footer {
+  background-color: var(--basic-white); 
 }
 
 .footer {
