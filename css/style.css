@@ -9,6 +9,7 @@
   --special-gray-1: #f2f2f2;
   --special-gray-2: #a9a9a9;
   --special-gray-3: #666666;
+  --special-gray-4: rgba(255, 255, 255, 0.3);
   --special-footer-background: rgba(255, 255, 255, 0.9);
 
   --special-blue: #669ec0;
@@ -23,15 +24,56 @@
   --special-app-border: #e5e5e5;
 
   --range-dot: #ababab;
+  --body-shadow: rgba(0, 1, 1, 0.2);
+  --search-shadow: rgba(0, 1, 1, 0.15);
+}
+
+
+/* Fonts */
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"),
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"),
+       url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cuprum"),
+       url("../fonts/cuprumregular.woff2") format("woff2"),
+       url("../fonts/cuprumregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Cuprum Bold"),
+       url("../fonts/cuprumbold.woff2") format("woff2"),
+       url("../fonts/cuprumbold.woff") format("woff");
 }
 
 /* Global */
 
 body {
-  max-width: 1200px;
+  width: 1200px;
   margin: auto;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Cuprum", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -40,12 +82,7 @@ body {
   background-color: var(--special-gray-1);
   background-position: top center;
   background-repeat: no-repeat;
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-}
-
-ul {
-  margin: 0;
-  padding: 0;
+  box-shadow: 0px 5px 15px var(--body-shadow);
 }
 
 a {
@@ -77,7 +114,7 @@ img {
 }
 
 .page-body {
-  min-height: 100%;
+  max-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -111,18 +148,46 @@ img {
   justify-content: space-between;
   list-style: none;
   align-items: center;
+  margin: 0;
   height: 53px;
   padding: 0 72px;
   border-bottom: 3px solid var(--basic-white);
 }
 
-.navigation-left-1 {
+.navigation-item {
+  width: 25%;
+}
+
+.navigation-item-first {
+  text-align: left;
+  margin-right: 2px;
+}
+
+.navigation-item-second {
+  text-align: left;
+  padding-right: 40px;
+}
+
+.navigation-item-third {
+  text-align: right;
+  padding-left: 32px;
+}
+
+.navigation-item-fourth {
+  text-align: right;
+}
+
+.navigation-item:nth-child(2) {
+  margin-right: 7%;
+}
+
+/* .navigation-left-1 {
   margin-right: 131px;
 }
 
 .navigation-right-1 {
   margin-left: 143px;
-}
+} */
 
 .site-navigation-current a:not([href]) {
   background-color: var(--basic-white);
@@ -201,6 +266,8 @@ img {
 
 .features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: minmax(256px, auto) minmax(330px, auto) minmax(256px,auto) minmax(256px, auto);
@@ -492,7 +559,7 @@ img {
   height: 480px;
   background-color: var(--basic-white);
   margin: 0px auto;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0px 7px 15px var(--search-shadow);
 }
 
 .form {
@@ -620,7 +687,8 @@ img {
   background-repeat: no-repeat;
 }
 
-.fields-after:hover {
+.fields-after:hover,
+.fields-after:focus {
   background-image: url(../img/calendar-black.svg);
 }
 
@@ -831,6 +899,11 @@ img {
   margin-bottom: 12px;
 }
 
+.filter-list {
+  margin: 0;
+  padding: 0;
+}
+
 .filter .filter-list {
   list-style: none;
   font-size: 14px;
@@ -945,7 +1018,7 @@ img {
 
 .scale {
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--special-gray-4);
 }
 
 .bar {
@@ -962,7 +1035,7 @@ img {
   background-color: var(--range-dot);
   border: 8px solid var(--basic-white);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 var(--body-shadow);
   cursor: pointer;
 }
 
@@ -992,6 +1065,13 @@ img {
 
 .hotels-sort {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hotels-list {
+  margin: 0;
+  padding: 0;
 }
 
 .sort-type {
@@ -1391,6 +1471,11 @@ img {
   line-height: 26px;
   color: var(--basic-black);
   background-color: transparent;
+}
+
+.social{
+  margin: 0;
+  padding: 0;
 }
 
 .social-container-item {
