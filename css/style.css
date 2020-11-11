@@ -49,31 +49,13 @@
        url("../fonts/ptsansbold.woff") format("woff");
 }
 
-@font-face {
-  font-family: "Cuprum";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Cuprum"),
-       url("../fonts/cuprumregular.woff2") format("woff2"),
-       url("../fonts/cuprumregular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Cuprum";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Cuprum Bold"),
-       url("../fonts/cuprumbold.woff2") format("woff2"),
-       url("../fonts/cuprumbold.woff") format("woff");
-}
-
 /* Global */
 
 body {
   width: 1200px;
   margin: auto;
   padding: 0;
-  font-family: "PT Sans", "Cuprum", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
